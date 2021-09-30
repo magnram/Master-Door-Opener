@@ -11,7 +11,7 @@ function App() {
           disabled={disabled}
           onClick={() => {
             setDisabled(true)
-            fetch('http://192.168.0.12:8090')
+            fetch('http://10.53.40.133:8090')
             .catch(() => setDisabled(false))   
           }
           }
