@@ -1,25 +1,14 @@
 import React, { useState } from 'react';
+import { Redirect } from "react-router-dom";
 import './App.css';
 
 function App() {
   const [disabled, setDisabled] = useState(false);
+  window.location.href = "http://192.168.0.12:3000"
   return (
-    <div className="App">
-      <header className="App-header">
-        <button 
-          style={{width: 200, height: 150, fontSize: 40, borderRadius: 0}}
-          disabled={disabled}
-          onClick={() => {
-            setDisabled(true)
-            fetch('https://192.168.0.12:8090')
-            .catch(() => setDisabled(false))   
-          }
-          }
-        >
-          Open
-        </button>
-      </header>
-    </div>
+    <div>
+    Test
+    </div> 
   );
 }
 
